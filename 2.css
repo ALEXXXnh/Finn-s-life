@@ -2,7 +2,7 @@ body{
     width: 1200px;
     height: auto;
     position: relative;
-
+    cursor: none;
     background-color: black;
     font-family: 'Courier New', Courier, monospace;
 
@@ -10,7 +10,16 @@ body{
 
 .cursor{
     display: flex;
+    position: fixed;
+    background-color: transparent;
+    width: 12%;
+    height: 12%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 999;
 }
+
 
 
 @keyframes transition {
@@ -41,14 +50,15 @@ h3{
     position: relative;
     width: 100%;
     font-family: monospace;
-    font-size: 200%;
+    font-size: 200px;
     color: #ffff;
-    margin-top: -1%;
+    margin-top: -60%;
     margin-right: 0%;
     text-align: right;
-    padding-top: 10%;
+    padding-top: 0%;
     padding-left: 43%;
-    animation: transition2 120s;
+    animation: transition2 100s;
+    z-index: 88;
 }
 .end{
     position: relative;
@@ -59,4 +69,15 @@ h3:hover{
     filter: brightness(180%);
     color: #920606;
     transition: 3s;
+}
+.controlers{
+    color: #920606;
+}
+
+.mp4{
+    position: relative;
+    width: 70%;
+    height: auto;
+    padding: 2%;
+    margin-top: 0%;
 }

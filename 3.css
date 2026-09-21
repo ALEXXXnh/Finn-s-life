@@ -2,7 +2,7 @@ body{
     width: 1200px;
     height: auto;
     position: relative;
-
+    cursor: none;
     background-color: black;
     font-family: 'Courier New', Courier, monospace;
 
@@ -10,6 +10,14 @@ body{
 
 .cursor{
     display: flex;
+    position: fixed;
+    background-color: transparent;
+    width: 12%;
+    height: 12%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 999;
 }
 
 
@@ -39,15 +47,39 @@ h3{
     text-align: right;
     padding-top: 10%;
     padding-left: 43%;
-    animation: transition2 120s;
+    animation: transition2 12s;
 }
 .again{
     position: relative;
-    margin-bottom: 0%;
+    top: 0%;
     text-align: right;
 }
 h3:hover{
     filter: brightness(180%);
     color: #920606;
+    transition: 1s;
+}
+
+h1{
+    position: relative;
+    width: 60%;
+    top: 0%;
+    left: 0%;
+    color: gray;
+    font-family: monospace;
+    font-size: 130px;
+    text-align: center;
+}
+h1:hover{
+    filter: brightness(172%);
     transition: 3s;
+}
+.dead{
+    position: relative;
+    width: 90%;
+    align-items: center;
+}
+.pic{
+    width: 120%;
+    position: relative;
 }

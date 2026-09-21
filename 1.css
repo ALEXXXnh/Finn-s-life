@@ -2,7 +2,7 @@ body{
     width: 1200px;
     height: auto;
     position: relative;
-
+    cursor: none;
     background-color: black;
     font-family: 'Courier New', Courier, monospace;
 
@@ -10,8 +10,15 @@ body{
 
 .cursor{
     display: flex;
+    position: fixed;
+    background-color: transparent;
+    width: 12%;
+    height: 12%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 999;
 }
-
 
 @keyframes transition {
  from {
