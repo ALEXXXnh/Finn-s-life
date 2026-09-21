@@ -1,0 +1,50 @@
+body{
+    width: auto;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.cursor{
+    display: flex;
+}
+
+
+@keyframes transition {
+ from {
+    transform: scale3d(0.1, 0.1);
+    opacity: 0%;
+ }
+ to {
+    transform: scale3d(1, 1);
+    opacity: 100%;
+ }
+}
+#all{
+    animation:transition 10s;
+}
+
+
+
+
+
+
+
+
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    font-size: 120px;
+
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 70px;
+    color: #fff;
+}
+.play{
+    position: absolute;
+    top: 50%;
+    align-items: center;
+}
