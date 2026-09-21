@@ -23,7 +23,40 @@ body{
     opacity: 100%;
  }
 }
+@keyframes transition2 {
+ from {
+    transform: scale3d(0.01, 0.01);
+    opacity: 0%;
+ }
+ to {
+    transform: scale3d(1, 1);
+    opacity: 100%;
+ }
+}
 #all{
     animation:transition 14s;
 }
 
+h3{
+    position: relative;
+    width: 100%;
+    font-family: monospace;
+    font-size: 200%;
+    color: #ffff;
+    margin-top: -1%;
+    margin-right: 0%;
+    text-align: right;
+    padding-top: 10%;
+    padding-left: 43%;
+    animation: transition2 120s;
+}
+.end{
+    position: relative;
+    margin-bottom: 0%;
+    text-align: right;
+}
+h3:hover{
+    filter: brightness(180%);
+    color: #920606;
+    transition: 3s;
+}
