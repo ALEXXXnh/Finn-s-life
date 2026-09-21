@@ -1,5 +1,8 @@
 body{
-    width: auto;
+    width: 1200px;
+    height: auto;
+    position: relative;
+
     background-color: black;
     font-family: 'Courier New', Courier, monospace;
 
@@ -21,7 +24,7 @@ body{
  }
 }
 #all{
-    animation:transition 10s;
+    animation:transition 14s;
 }
 
 
@@ -33,18 +36,33 @@ body{
 
 
 h1{
-    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    font-family:  monospace;
     color: #fff;
-    font-size: 120px;
-
-}
-p{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 70px;
-    color: #fff;
+    font-size: 1200%;
+    width: 100%;
+    margin-top: 0%;
+    opacity: 80%;
 }
 .play{
+    position: relative;
+    top: -100%;
+    width: 0;
+    opacity: 80%;
+}
+h3{
     position: absolute;
-    top: 50%;
-    align-items: center;
+    font-family: monospace;
+    font-size: 304%;
+    color: #fff;
+    padding: 49%;
+    width: 100%;
+    top: 30%;
+    right: -100%;
+}
+h3:hover{
+    color: #3e0202;
+    filter: brightness(142%);
+    transform: scale(10, 10);
+    transition: 9s;
 }
